@@ -44,6 +44,8 @@ public class Buscaminas {
 			}
 		}
 		
+		
+		
 		for (int i=0;i<valor.length;i++) {
 			//crear 
 			numero=(int) (Math.random()*20);
