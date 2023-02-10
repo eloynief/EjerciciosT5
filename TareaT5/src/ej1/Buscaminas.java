@@ -1,14 +1,23 @@
 package ej1;
 
+import java.util.Arrays;
+
 public class Buscaminas {
 
-	
-	public static int[] main(int[] valor) {
+	//para meter el valor que se va a usar
+	public static int tablas(int v) {
 		// TODO Auto-generated method stub
 		int[] juego= new int[20];
 		int[] campovisible= new int[20];
-		int numero=0;
 		
+		int numero=0;
+		int jugadas=0;
+		int introducir=0;
+		
+		//paso 1: hacemos una tabla llena de minas
+		Arrays.fill(campovisible, -1);
+		
+		//paso 2: creación de la tabla
 		//posicionar las minas en el numero aleatorio hasta los 6
 		for (int i=0;i<=6;i++) {
 			
@@ -44,33 +53,31 @@ public class Buscaminas {
 			}
 		}
 		
+		System.out.println(Arrays.toString(campovisible));
 		
+		//paso 3: introducir los numeros que tienes que poner
 		
-		for (int i=0;i<valor.length;i++) {
-			//crear 
-			numero=(int) (Math.random()*20);
-			juego[i]=numero;
-			
-			//creamos un campo el cual esté lleno de minas para luego pasar los valores a esta tabla segun lo que escribas
-			
-			//si ese valor que te sale al escribir un numero de la posición en la tabla es -1, entonces el juego acaba
-			campovisible[i]=-1;
-			//
-			if(juego[/*numero a introducir*/]=campovisible[/*numero a introducir*/]){
+		//crear for para crear numeros 
+		//si ese valor que te sale al escribir un numero de la posición en la tabla es -1, entonces el juego acaba
+		//si juego introducir(introducir es el número positivo que escoges) es -1, entonces se acaba la partida
+			if(juego[introducir]==campovisible[introducir]){
 				System.out.println("Perdistes");
 			}
-			else {
-				juego[/*numero a introducir*/]=campovisible[/*numero a introducir*/];
+			else if(jugadas<14){
+				campovisible[introducir]=9;
 				
 			}
-		}
-		//crear for para crear numeros 
+		return introducir;
+	}
+	
+	public static int valor(int valor) {
 		
 		
+
 		//el return hara que puedas poner un valor en el buscaminas main
 		
 	}
-
+	
 }
 
 
