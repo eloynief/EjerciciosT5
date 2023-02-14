@@ -15,7 +15,7 @@ public class Main {
 		
 		
 		
-		int busca = Buscaminas.tablas(num);
+		int busca = Buscaminass.tablas(num);
 	}
 
 }

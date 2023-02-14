@@ -2,7 +2,7 @@ package ej1;
 
 import java.util.Arrays;
 
-public class Buscaminas {
+public class Buscaminass {
 
 	// para meter el valor que se va a usar
 	public static int tablas(int v) {
