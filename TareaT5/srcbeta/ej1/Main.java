@@ -10,8 +10,9 @@ public class Main {
 		Scanner sc= new Scanner(System.in);
 		
 		
-		System.out.println("Pon un valor");
+		System.out.println("Escribe la posición que quieras seleccionar");
 		num=sc.nextInt();
+		
 		
 		
 		int busca = Buscaminas.tablas(num);

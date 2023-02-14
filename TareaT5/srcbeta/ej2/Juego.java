@@ -17,7 +17,7 @@ public class Juego {
 		double valor1=0,valor2=0,carta=0;
 		int[][] cartas = new int [4][10];
 		String tipo = null,numero = null;
-		String seleccion;
+		int seleccion=0;
 		Scanner sc= new Scanner(System.in);
 		//llenar el array de 0
 		System.out.println(Arrays.deepToString(cartas));
@@ -33,10 +33,10 @@ public class Juego {
 					System.out.println("Es el turno del Jugador 1");
 					System.out.println("quieres sacar una carta (s/n)? ");
 					//de momento es un int
-					seleccion=sc.next();
+					seleccion=sc.nextInt();
 					
 					//si dices que si
-					if(seleccion.equals("s")) {
+					if(seleccion==1) {
 						
 						//generar valor random si seleccionas si
 						numx = (int) (Math.random() * 4+1);
@@ -149,10 +149,10 @@ public class Juego {
 					System.out.println("Es el turno del Jugador 2");
 					System.out.println("quieres sacar una carta (s/n)? ");
 					//de momento es un int
-					seleccion=sc.next();
+					seleccion=sc.nextInt();
 					
 					//si dices que si
-					if(seleccion.equals("s")) {
+					if(seleccion==1) {
 						
 						//generar valor random si seleccionas si
 						numx = (int) (Math.random() * 4+1);
@@ -274,10 +274,8 @@ public class Juego {
 		
 	}
 	
-//	public static String tipo(int tipo) {
-//		
-//	}
+	public static void String(String tipo,String numero) {
+		
+	}
 
 }
-
-
